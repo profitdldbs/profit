@@ -15,7 +15,8 @@
 ## 문자열 입출력 연습문제
 name = input('이름을 입력하세요>> ')
 print(f'{name}님 안녕하세요')
-print('%s님 안녕하세요'%name)
+print('%s님 저리가세요'%name)
+print(f'{name}님 다시오세요')
 
 
 ## 문자열 입출력 Mission
