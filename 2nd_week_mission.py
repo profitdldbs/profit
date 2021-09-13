@@ -18,6 +18,9 @@ print(f'{name}님 안녕하세요')
 print('%s님 저리가세요'%name)
 print(f'{name}님 다시오세요')
 
+meal = input('을 입력하세요>> ')
+print(f'{meal} 맛있게 드세요')
+print('%s 맛있게 드세요'%meal)
 
 ## 문자열 입출력 Mission
 
