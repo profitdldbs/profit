@@ -23,6 +23,12 @@ talk = input('지금 하고싶은 말은?>>> ')
 print(f'{name}는 {talk}라고 말했다.')
 '''
 
+"""
+name = input('이름 대라>>> ')
+what = input('뭘 하고싶냐>>> ')
+print(f'그렇구나~~ 우리 {name}이는 {what}을/를 하고 싶구나~~')
+"""
+
 # print()
 # print()
 
@@ -64,6 +70,9 @@ print("'이 XX야' 라고는 속으로만 생각하자")
 print(1,2,3,4,5,6, sep='퉤', end='퉷')
 '''
 
+"""
+print(5,15,25, sep='번 ..쳇.. ', end='번 ..쳇.. 발표해라')
+"""
 ## - 불린형(참/거짓)
 ## : 참(True)/거짓(False) 형태의 자료형
 ## mission>> 불린형의 True와 False를 출력하고 type() 함수를 활용하여
