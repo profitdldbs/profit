@@ -49,7 +49,6 @@ print(type(14))    #int
 print(1.234, 3.223, 3.311)
 print(type(1.234))    # float
 '''
-
 ## 문자열
 ## : 문자를 나열한 형태의 자료형
 ## mission1>> ""와 ''를 활용하여 내가 지금 하고 싶은 말을 문자열로 출력하기
@@ -63,7 +62,6 @@ print(type("아 게임하고싶다"))   # str
 print('"집에가고싶다"라고 말했다.')
 print("'이 XX야' 라고는 속으로만 생각하자")
 '''
-
 ## mission3>> sep과 end를 활용하여 print() 용법 익히기
 ## sep: ,로 출력이 구분된 문자열 사이 출력 설정 // end: print문의 끝났을 때의 문자열 출력 설정
 '''
@@ -82,7 +80,6 @@ print(True)
 print(False)
 print(type(True))   # bool
 '''
-
 # ※ 변수와 연산자 참고: 모두의 파이썬 35p
 # [변수]
 ## 변수란?: 데이터를 저장할 공간. 할당연산자(=)를 활용.
@@ -137,7 +134,6 @@ print(7//3) # 2
 print(7%3)  # 1
 print(7**3) # 343
 '''
-
 ## 문자열연산: + *
 ## mission1>> 해시태그1,2,3를 변수로 받고 +연산을 사용하여 이를 한 문장으로 만들어
 ## 출력해보자
@@ -162,7 +158,6 @@ print(5!=5)
 print("3.141592653589793" == "3.141592653589783")           
 print("illIIilil|IIIIIilllllIIIlilil" != "illIIilil|IIIIIilllllIIIIlilil")  
 '''
-
 ## 논리연산: and, or, not 연산, 결과는 True or False
 ## mission>>and, or, not 연산을 활용하여 결과를 예측(주석)하고 결과 학인하기
 '''
