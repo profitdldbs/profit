@@ -112,7 +112,7 @@ t. mainloop()
 import turtle as t
 
 t.bgcolor('black')
-color = ['red', 'blue', 'yellow', 'green', 'white']
+color = ['red', 'blue', 'yellow', 'black', 'white']
 t.speed(0)
 
 for i in range(1000):
