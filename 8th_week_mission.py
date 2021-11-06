@@ -25,7 +25,8 @@ for i in range(n):
     t.circle(300)
     t.left(360/n)
 t. mainloop()
-
+'''
+'''
 #2
 import turtle as t
 
@@ -38,7 +39,8 @@ for i in range(n):
     t.circle(300)
     t.left(360/n)
 t. mainloop()
-
+'''
+'''
 #3
 import turtle as t
 
@@ -67,7 +69,8 @@ for i in range(3):
     for j in range(5):
         print(array[i][j], end='  ')
     print()
-
+'''
+'''
 #2
 for i in range(1,101):
     for j in range(i):
@@ -83,18 +86,22 @@ import random
 random_num = random.randint(1, 100)
 count = 0
 
-while count <=5:
+while count <= 9:
     user_num = int(input('1~100까지 숫자를 입력해주세요>>'))
     count += 1
     if random_num == user_num:
-        print('Jeong-dab-ib-ni-da!')
+        print('Jeong-dab-ib-ni-da🎉🎊')
         break
     elif random_num > user_num:
         print('Up')
     else:
         print('Down')
-print(f'시도한 횟수: {count}')
 
+print(f'(시도한 횟수: {count})'
+#횟수가 다 되어서 끝났을 때 게임오버 말 넣는 방법
+'''
+
+'''
 import random
 
 random_num = random.randint(1, 100)
@@ -122,7 +129,7 @@ t = turtle.Turtle('turtle')
 rainbow_size = 360         # 무지개 크기(너비)
 pen_size = 30              # 펜 굵기
 rainbow_color = ['red', 'orange', 'yellow', 'green', 'blue', 'navy', 'purple']      # 활용할 색상 지정
-t.speed(0)                # 거북이 속도 설정
+t.speed(10)                # 거북이 속도 설정
 
 # 펜 초기 설정
 t.pensize(pen_size)
@@ -140,7 +147,6 @@ turtle.mainloop()
 # <Mission: 이 부분을 작성해 주세요>
 """
 '''
-
 # [함수]
 ##: 여러개의 명령어들을 묶어서 한꺼번에 처리할 수 있도록 만든 하나의 명령어 묶음에 이름을 붙인 것.
 ## 문법: def 함수이름(매개변수1, 매개변수2, ...):
