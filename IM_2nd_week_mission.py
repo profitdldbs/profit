@@ -1,4 +1,4 @@
-# Ai반 2기 python 중급반 - 1주차 정규수업(16:30~18:30) mission
+# Ai반 2기 python 중급반 - 2주차 정규수업(16:30~18:30) mission
 '''
 [수업을 시작하기 전에!]
 1. 웨일ON으로 원격 회의실 접속하기
@@ -8,80 +8,15 @@
 5. 수업시간 집중~~~!! 딴 짓! 멈춰~~~~~!
 
 [저번주 복습]
-여러가지 반복문 Mission 수행: 미디어아트2, Up-down game, 무지개 그리기
+1. 함수의 개념과 특징
+2. 함수 만들기 & 호출하기
+3. 여라가지 함수: 입력과 반환값의 유무에 따라
 '''
 
 # [함수]
-##: 여러개의 명령어들을 묶어서 한꺼번에 처리할 수 있도록 만든 하나의 명령어 묶음에 이름을 붙인 것.
-## 문법: def 함수이름(매개변수1, 매개변수2, ...):
-##         명령어 블럭
-##         return 반환값
-
-## docstring: 함수에 대한 설명을 나타내는 문장 - 아래 함수들 생성시 doc-string 작성해주기
-
-## 연습문제1: 입력X, 출력X인 함수
-## >> 함수를 호출하면 별모양을 그리는 DrawStar_100()
-'''
-import turtle as t
-
-def DrawStar_100():
-        for i in range(5):
-                t.forward(100)
-                t.right(144)
-                t.forward(100)
-                t.left(72)
-
-DrawStar_100()
-t.mainloop()
-'''
-
-## 연습문제2: 입력O, 출력X인 함수
-## >> 한 변의 길이를 입력하면, 그 한변의 길이를 가지는 별을 그리는 DrawStar()
-'''
-# 모듈 불러오기
-import turtle as t
-
-t.pencolor('red')
-t.bgcolor('white')
-t.pensize(500)
-
-# 함수 정의
-def DrawStar(length):
-        for i in range(5):
-                t.forward(length)
-                t.right(144)
-                t.forward(length)
-                t.left(72)
-
-DrawStar(1)
-t.mainloop()
-'''
-## 연습문제3: 입력X, 출력O인 함수
-## >> 1~100까지 랜덤한 정수 1개를 반환하는 getRandomNum()
-'''
-# 모듈
-import random
-
-# 함수 정의
-def getRandomNum():
-        return random.randint(1,100)
-
-num = getRandomNum()
-print(num)
-'''
-## 연습문제4: 입력O, 출력O인 함수
-## >> a,b를 입력하면 두 수의 합을 반환하는 add()
-'''
-def add(x, y):
-        return x + y
-
-X = add(193374681, 837859135)
-print(X)
-'''
-'''
 ## 함수 Mission: 앞서 반복문 Mission4에서 그린 무지개를 "함수"로 만들어보자
 ## 조건은 ppt '함수 Mission' 참고
-
+'''
 # Mission: draw_rainbow() 함수 정의하기
 def draw_rainbow(t, rainbow_size, pen_size, x, y):
     """
@@ -93,12 +28,17 @@ def draw_rainbow(t, rainbow_size, pen_size, x, y):
     :param y: 무지개가 그려질 y좌표
     """
     # 설정(작성할 부분1)
-
+    rainbow_color = ['red', 'orange', 'yellow', 'green', 'blue', 'navy', 'purple']
+    t.pensize(pen_size)
 
     # 그리기(작성할 부분2)
-
-
-import turtle
+    for i in range(7):
+        t.setheading(90)
+        t.penup()
+        t.setpos(x+(rainbow_size - (pen_size * i)), y)
+        t.pencolor(rainbow_color[i])
+        t.pendown()
+        t.circle(rainbow_size - (pen_size * i), 180)
 
 win = turtle.Screen()
 win.screensize(1000,1000)
@@ -106,18 +46,20 @@ t = turtle.Turtle('turtle')
 t.speed(0)
 
 # 이제 draw_rainbow를 활용하여 무지개를 마음껏 그려보자(작성할 부분3)
-
+draw_rainbow(t, 100, 40, 45, 50)
+draw_rainbow(t, 500, 100, 150, -20)
+draw_rainbow(t, 700, 15, -80, 100)
 
 turtle.mainloop()
-
 '''
+
 ## [튜플]
 ## : 간단하게 말해 "수정, 추가, 삭제가 불가능한 리스트" 라고 간주할 수 있다.
 ## 연습문제1: 튜플 만들기
 ## 2가지 방법으로 튜플을 선언해보고, 두 변수의 값고 자료형을 출력해보자.
 '''
-numbers1 =              # ()로 튜플 만들기
-numbers2 =              # ()없이 튜플 만들기
+numbers1 = (1,2,3)              # ()로 튜플 만들기
+numbers2 = 4,5,6             # ()없이 튜플 만들기
 print(numbers1, type(numbers1))
 print(numbers2, type(numbers2))
 '''

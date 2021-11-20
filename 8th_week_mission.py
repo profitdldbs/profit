@@ -40,7 +40,7 @@ for i in range(n):
     t.left(360/n)
 t. mainloop()
 '''
-'''
+
 #3
 import turtle as t
 
@@ -54,7 +54,7 @@ for i in range(0, 1000, 2):
     t.fd(i)
     t.left(89)
 t. mainloop()
-'''
+
 
 # [반복문 추가 문제]
 ## 이중 for문 연습문제(warming-up)
