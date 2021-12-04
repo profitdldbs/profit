@@ -134,7 +134,7 @@ class Cat:
         print('야옹!야옹!!')
 
     def translate_cry(self):
-        print('하찮은 닝겐 밥 대령해라!')
+        print('하찮은 닝겐 밥을 대령해라!')
 
     def translate_tw(self):
         print('심심하다 나와 놀게 해주겠다 닝겐!')
@@ -144,6 +144,8 @@ ragdoll.cry()
 ragdoll.tail_wag()
 ragdoll.translate_cry()
 ragdoll.translate_tw()
+
+
 ## <생성자>
 ## : 객체가 생성될 때 자동으로 호출되는 메서드.
 ## [문법] class 클래스이름:
