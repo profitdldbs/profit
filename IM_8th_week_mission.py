@@ -82,7 +82,8 @@ def turtleStamp(x, y):
     t.hideturtle() # 거북이 숨기기
     t.setpos(x,y) # (x,y)좌표로 거북이 이동
     t.setheading(random.randint(0,360)) # 랜덤하게 거북이의 머리 방향 지정(0~360도)
-    t.shapesize(random.randint(1,2)) # 랜덤하게 거북이의 크기 설정(1~10)
+    # t.shapesize(random.randint(1,2)) # 랜덤하게 거북이의 크기 설정(1~10)
+    t.shapesize(1)
     r,g,b = randomColor() # 랜덤 r,g,b 값 가져오기(randomColor 함수 사용하기)
     t.fillcolor(r,g,b)# 스템프 색상 설정(랜덤 r,g,b 값 넣기)
     t.pencolor(r,g,b)# 스템프 테두리 색성 설정(랜덤 r,g,b 값 넣기)
