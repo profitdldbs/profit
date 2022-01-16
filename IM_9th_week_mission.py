@@ -13,7 +13,7 @@
 3. turtle을 활용한 이벤트 마우스 이벤트 처리
 '''
 
-'''
+
 # [이벤트 처리]
 ## turtle 마우스 이벤트 처리 Mission
 
@@ -58,7 +58,7 @@ t.onscreenclick(rightClick, 3)        # <오른쪽 클릭 이벤트 설정>
 t.onscreenclick(scrollClick, 2)       # 스크롤 클릭 이벤트 설정
 
 t.mainloop()
-'''
+
 
 '''
 ## turtle 키보드 마우스 처리 Mission
@@ -142,12 +142,12 @@ window = Tk()
 window.mainloop()
 '''
 
-
+'''
 from tkinter import *
 window = Tk()
 window.title('test GUI')
 window.geometry('1000x600+450+200')
 window.resizable(False, True)
 window.mainloop()
-
+'''
 

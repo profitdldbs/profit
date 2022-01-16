@@ -101,7 +101,7 @@ print(f'(시도한 횟수: {count})'
 #횟수가 다 되어서 끝났을 때 게임오버 말 넣는 방법
 '''
 
-'''
+
 import random
 
 random_num = random.randint(1, 100)
@@ -117,7 +117,7 @@ while True:
         print('Down')
     if count == 5:
         break
-'''
+
 ## 반복문 추가문제 Mission3: turtle 모듈을 활용하여 무지개 만들기
 ### for 반복문 Mission2: turtle 모듈을 활용하여 무지개 만들기
 '''
